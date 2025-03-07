@@ -1,5 +1,5 @@
-C Mention\sthe\s"--proxy\sPROXY"\soption\sin\sthe\shelp\stext\sfor\sall\scommand\sthat\nsupport\sit.
-D 2025-03-07T18:39:41.460
+C In\s/forumpost\sand\s/forumthread,\suse\s%h\sinstead\sof\s%s\swhen\srendering\sa\sthread's\stitle.
+D 2025-03-07T18:46:11.408
 F .editorconfig 132c5a213aa3ce13dcc9c19f8a7ea306e3640bec4ae693378116cee339c34a1a
 F .fossil-settings/binary-glob 679cf0b793f345a23e6dab55174511758d5fa28dd7724f61bab41d2b75c288c2
 F .fossil-settings/clean-glob 3efaf2f54ed450047dea396ef7197ab4a7596654d844ce25c419cc442e2f493f
@@ -432,7 +432,7 @@ F src/file.c 247e454a561c805565b18428f0b575517c6eed160fb9695624e7501b0fdc401f
 F src/fileedit.c 9e040d72f6c903efbc6b0aa5b43dad738c05480aa1134743ad351f941282bcf3
 F src/finfo.c f5ba1e0a0de9db4b01a1fd6455d3480f6b3be6b6c62205cd7217a12bbb0cb5e1
 F src/foci.c 2b554bb2443db706f07d8e5a8a5215e372c1baec3af2c4f78e1d9d5612326d06
-F src/forum.c c50e347570a0b6d9d48a1fda9713f15180122442c26bb416a2eaf3a5585400b3
+F src/forum.c 1ff9d83b6d0cb4cd2e35901b3de7324fd20137e0a27ad6c42f195cc678aa1db3
 F src/forum.js 853fa1422e07fd4a60bea2338d5a30c8ff45a48c346d61542c33b28353412b99
 F src/fossil.bootstrap.js facf9146e261cc67c8273f11ab2131569b032d69fc1166369e5b666c4f7507ee
 F src/fossil.confirmer.js 39f4b991e8f3b6a4875b804ea0017bea63c5af08e8bb775165c0a34c21211915
@@ -966,8 +966,8 @@ F www/whyusefossil.wiki 5678210f5e82178b9e4104f19e4b43c87ea824663e294b8cbcc5503c
 F www/wikitheory.wiki 9f664eb4fa24d97afbe2b1375d78069a5ad534c36c40f003bcdf5f428692771d
 F www/wsl_caveats.wiki dc4a8388b29d05641ad4d9769c18cbe49963d000dbdc3a9dd6f616ccbcf12dea
 F www/xkcd-git.gif 1f9bc44ed41cad3f5ac18f21e3463e3390b53b29
-P e28cc7373a6698f5bf6e303f602e97e695bc619beb200e4605c887f9153770e4
-R ece470627376abde6ea04ad6749acc00
-U mgagnon
-Z d511f039220536750fb07d6bdcd86cc1
+P 6d4cd32921494377cb00014a5502f358f466f761f8ffc4ec8f71a9b204e5ca5c
+R 74cd1be58f906fcb7b0c91b57415956d
+U stephan
+Z 3c397db5d3bda72d76483ce5ddeb8f6f
 # Remove this line to create a well-formed Fossil manifest.

@@ -1211,7 +1211,7 @@ void forumthread_page(void){
     fpid
   );
   style_set_current_feature("forum");
-  style_header("%s%s", zThreadTitle, *zThreadTitle ? "" : "Forum");
+  style_header("%h%s", zThreadTitle, *zThreadTitle ? "" : "Forum");
   fossil_free(zThreadTitle);
   if( mode!=FD_CHRONO ){
     style_submenu_element("Chronological", "%R/%s/%s?t=c%s%s", g.zPath, zName,
