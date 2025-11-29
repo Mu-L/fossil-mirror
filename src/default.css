@@ -625,6 +625,7 @@ tr.diffskip.jchunk:hover {
   cursor: pointer;*/
 }
 tr.diffskip > td.chunkctrl {
+  font-family: monospace;
   text-align: left;
 }
 tr.diffskip > td.chunkctrl > div {
@@ -1375,15 +1376,16 @@ hr {
   margin: 0.25em;
 }
 #fossil-status-bar {
-  display: block;
-  border-width: 1px;
-  border-style: inset;
   border-color: inherit;
-  min-height: 1.5em;
-  font-size: 1.2em;
-  padding: 0.2em;
-  margin: 0.25em 0;
+  border-style: inset;
+  border-width: 1px;
+  display: block;
   flex: 0 0 auto;
+  font-family: monospace;
+  font-size: 1.2em;
+  margin: 0.25em 0;
+  min-height: 1.5em;
+  padding: 0.2em;
 }
 .font-size-80 {
   font-size: 80%;
@@ -1474,6 +1476,7 @@ table.numbered-lines {
                          on them. */;
 }
 table.numbered-lines > tbody > tr {
+  font-family: monospace;
   line-height: 1.35;
   white-space: pre;
 }
@@ -1889,19 +1892,18 @@ body.branch .submenu > a.timeline-link.selected {
   display: inline;
 }
 
-/* Candidate fonts for various forms of monospaced text. Collected here
- * to avoid repeating this long list of fonts. */
-code, kbd, pre, samp, tt, var,
-    div.markdown ol.footnotes > li.fn-joined > sup.fn-joined,
-    table.numbered-lines > tbody > tr,
-    tr.diffskip > td.chunkctrl,
-    #fossil-status-bar,
-    .monospace {
-  font-family: "Source Code Pro", "Menlo", "Monaco", "Consolas",
-               "Andale Mono", "Ubuntu Mono", "Deja Vu Sans Mono",
-               "Letter Gothic", "Letter Gothic Std", "Prestige Elite Std",
-               "Courier", "Courier New",
-               monospace;
+/* Fossil's generated HTML marks monospaced text in many different ways.
+ * We we take care of the generic tag cases here to avoid repeating the
+ * stying.  One-off cases are handled elsewhere.
+ *
+ * This used to list many candidate fonts deemed to look good, in
+ * descending order of desirability, but that was because browsers
+ * often defaulted to terrible choices.  That is no longer the case,
+ * so now we go generic to get a good-enough option by default, which
+ * then allows the user to override it via their browser prefs.
+ */
+code, kbd, pre, samp, tt, var, .monospace {
+  font-family: monospace;
 }
 
 div.markdown > ol.footnotes {
@@ -1912,6 +1914,7 @@ div.markdown > ol.footnotes > li {
 }
 div.markdown ol.footnotes > li.fn-joined > sup.fn-joined {
   color: gray;
+  font-family: monospace;
 }
 div.markdown ol.footnotes > li.fn-joined > sup.fn-joined::after {
   content: "(joined from multiple locations) ";
