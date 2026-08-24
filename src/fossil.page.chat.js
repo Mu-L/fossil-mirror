@@ -196,7 +196,7 @@ window.fossil.onPageLoad(function(){
         hashtag:{
           activeTag: undefined,
           match: function(tag){
-            return !this.activeTag || tag===this.activeTag;
+            return !this.activeTag || tag?.toLowerCase?.()===this.activeTag.toLowerCase();
           },
           matchElem: function(e){
             return !this.activeTag
