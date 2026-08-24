@@ -196,7 +196,7 @@ window.fossil.onPageLoad(function(){
         hashtag:{
           activeTag: undefined,
           match: function(tag){
-            return !this.activeTag || tag?.toLowerCase?.()===this.activeTag.toLowerCase();
+            return !this.activeTag || tag?.toLowerCase?.()===this.activeTag;
           },
           matchElem: function(e){
             return !this.activeTag
@@ -840,7 +840,7 @@ window.fossil.onPageLoad(function(){
                     && this.filter.current!==this.filter.hashtag)){
           this.clearFilters();
         }
-        this.filter.hashtag.activeTag = tag;
+        this.filter.hashtag.activeTag = tag.toLowerCase();
         if(tag) this.applyMessageFilter(this.filter.hashtag);
         this.filter.current = tag ? this.filter.hashtag : undefined;
         return this;
