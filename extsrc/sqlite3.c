@@ -18,7 +18,7 @@
 ** separate file. This file contains only code for the core SQLite library.
 **
 ** The content in this amalgamation comes from Fossil check-in
-** 4b30d1d7e22b9b74753a6fb4d9e1f884ddce with changes in files:
+** 555f31c64d3fcc55df2715a7c8c1cb28503b with changes in files:
 **
 **    
 */
@@ -469,10 +469,10 @@ extern "C" {
 */
 #define SQLITE_VERSION        "3.54.0"
 #define SQLITE_VERSION_NUMBER 3054000
-#define SQLITE_SOURCE_ID      "2026-08-27 10:31:42 4b30d1d7e22b9b74753a6fb4d9e1f884ddcee12273d6842954ed44de94e5f4b9"
+#define SQLITE_SOURCE_ID      "2026-08-27 10:58:16 555f31c64d3fcc55df2715a7c8c1cb28503b2c0eb21d950ccdcbf6f577593dd5"
 #define SQLITE_SCM_BRANCH     "trunk"
 #define SQLITE_SCM_TAGS       ""
-#define SQLITE_SCM_DATETIME   "2026-08-27T10:31:42.047Z"
+#define SQLITE_SCM_DATETIME   "2026-08-27T10:58:16.680Z"
 
 /*
 ** CAPI3REF: Run-Time Library Version Numbers
@@ -264815,7 +264815,7 @@ static void fts5SourceIdFunc(
 ){
   assert( nArg==0 );
   UNUSED_PARAM2(nArg, apUnused);
-  sqlite3_result_text(pCtx, "fts5: 2026-08-27 10:31:42 4b30d1d7e22b9b74753a6fb4d9e1f884ddcee12273d6842954ed44de94e5f4b9", -1, SQLITE_TRANSIENT);
+  sqlite3_result_text(pCtx, "fts5: 2026-08-27 10:58:16 555f31c64d3fcc55df2715a7c8c1cb28503b2c0eb21d950ccdcbf6f577593dd5", -1, SQLITE_TRANSIENT);
 }
 
 /*
