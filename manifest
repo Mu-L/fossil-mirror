@@ -1,5 +1,5 @@
-C Fix\sa\scompiler\swarning\scaused\sby\sthe\sprevious\scheck-in.
-D 2026-08-27T11:00:33.372
+C Fix\sthe\sHTML\sdisplay\sof\shelp\sfor\sthe\stimelime\scommand.\n[forum:/info/2026-08-28T06:50:53Z|Forum\s2026-08-28T06:50:53Z]
+D 2026-08-28T11:06:14.726
 F .editorconfig 132c5a213aa3ce13dcc9c19f8a7ea306e3640bec4ae693378116cee339c34a1a
 F .fossil-settings/binary-glob 679cf0b793f345a23e6dab55174511758d5fa28dd7724f61bab41d2b75c288c2
 F .fossil-settings/clean-glob 3efaf2f54ed450047dea396ef7197ab4a7596654d844ce25c419cc442e2f493f
@@ -425,7 +425,7 @@ F src/diff.c 3e46c56274896ac8ebc3035a32060bf5898f6cd2b6540816d62d6649125eb3bd
 F src/diff.js 804610908c7eafac7bb0bbdde07f7656feb09d89543d131cdb0b3b4cfa00f5e2
 F src/diff.tcl 6208e877c1ce30bfd81b04aa2e486d58c2394bfd2a477e4855e758eb7d6e75b8
 F src/diffcmd.c de89310489017122ede51ebdd46800498f9e56afab55d0626d36ef6a9f3aa3ac
-F src/dispatch.c f9b0602b200fb378bed080e327e2cf7db08f683c21aa81ba834be0ac7c597b88
+F src/dispatch.c 668bb146c946b55cdebd7dc3275f7b321240490ae82873b8e893268435ea8673
 F src/doc.c f938d93ea40675e563863b06631a4b266a9f343965ee31c9b1ea999b753a8d0a
 F src/encode.c e096f027e2cd51c8eca568b7a058aa5749fc05b6a0cec5915b1190e3f67d3481
 F src/etag.c f5ae12e6858162847c26183858f6ed58520af6b91fb3a6d786a69770c74de1c4
@@ -984,8 +984,8 @@ F www/whyusefossil.wiki 5678210f5e82178b9e4104f19e4b43c87ea824663e294b8cbcc5503c
 F www/wikitheory.wiki c8009e65011b6a508e42ce0ef6df07e36626a2c47892e31a5d5f60dae477300f
 F www/wsl_caveats.wiki dc4a8388b29d05641ad4d9769c18cbe49963d000dbdc3a9dd6f616ccbcf12dea
 F www/xkcd-git.gif 1f9bc44ed41cad3f5ac18f21e3463e3390b53b29
-P 677842d2031591a56d00aae025b9a2f828d1cabeaf3ca68724bf07ba04df8026
-R 7d2382975724299946c849c855426cce
+P 5d1b6a2be231dd020c17031dea3a302fbfd3a3b07134fdca205757c9fc224345
+R c3975c0fa546f1c20766fecfcb594236
 U drh
-Z e75c28b0b98ada85216de18924e81a5a
+Z c590937882d69b85bfd963adec76db28
 # Remove this line to create a well-formed Fossil manifest.
